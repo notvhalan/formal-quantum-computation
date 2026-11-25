@@ -23,6 +23,10 @@ public import QuantumComputation.Algorithms.Grover.Operators
 public import QuantumComputation.Algorithms.Grover.SimpleGrover
 public import QuantumComputation.Algorithms.Grover.Verification
 public import QuantumComputation.Algorithms.Hadamard.MeasureLoop
+public import QuantumComputation.Algorithms.LitterRouting.Example
+public import QuantumComputation.Algorithms.LitterRouting.Model
+public import QuantumComputation.Algorithms.LitterRouting.Oracle
+public import QuantumComputation.Algorithms.LitterRouting.Search
 public import QuantumComputation.Algorithms.QFT.Operators
 public import QuantumComputation.Algorithms.QFT.QFT
 public import QuantumComputation.Algorithms.QFT.States

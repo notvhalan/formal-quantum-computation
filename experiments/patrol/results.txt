@@ -1,0 +1,25 @@
+classes 314
+(3, 6, 9, 9) 4/5 sample optimal True exact-model failure 1.374067193181568e-08
+ACBD 35/2 [1, 1, 1, 1] [Fraction(35, 2), Fraction(35, 2)] 63/16
+ADBC 35/2 [1, 1, 1, 1] [Fraction(35, 2), Fraction(35, 2)] 63/16
+(3, 6, 9, 9) 1 sample optimal True exact-model failure 1.3651063133791206e-08
+ACBD 15 [1, 1, 1, 1] [Fraction(15, 1), Fraction(15, 1)] 27/8
+ADBC 15 [1, 1, 1, 1] [Fraction(15, 1), Fraction(15, 1)] 27/8
+(3, 6, 9, 9) 5/4 sample optimal True exact-model failure 1.3601555745166917e-08
+ACBD 13 [1, 1, 1, 1] [Fraction(13, 1), Fraction(13, 1)] 117/40
+ADBC 13 [1, 1, 1, 1] [Fraction(13, 1), Fraction(13, 1)] 117/40
+(3, 6, 9, 9) 3/2 sample optimal True exact-model failure 1.3514008812728702e-08
+ACBD 35/3 [1, 1, 1, 1] [Fraction(35, 3), Fraction(35, 3)] 21/8
+ADBC 35/3 [1, 1, 1, 1] [Fraction(35, 3), Fraction(35, 3)] 21/8
+(3, 6, 90, 9) 4/5 sample optimal True exact-model failure 1.4075978497580698e-08
+ACBCDC 59/2 [1, 1, 3, 1] [Fraction(12, 1)] 14169/1180
+ACDCBC 59/2 [1, 1, 3, 1] [Fraction(12, 1)] 14169/1180
+(3, 6, 90, 9) 1 sample optimal True exact-model failure 1.4067017480996313e-08
+ACBCDC 25 [1, 1, 3, 1] [Fraction(10, 1)] 507/50
+ACDCBC 25 [1, 1, 3, 1] [Fraction(10, 1)] 507/50
+(3, 6, 90, 9) 5/4 sample optimal True exact-model failure 1.4052282262341529e-08
+ACBCDC 107/5 [1, 1, 3, 1] [Fraction(42, 5)] 46281/5350
+ACDCBC 107/5 [1, 1, 3, 1] [Fraction(42, 5)] 46281/5350
+(3, 6, 90, 9) 3/2 sample optimal True exact-model failure 1.4045745871438609e-08
+ACBCDC 19 [1, 1, 3, 1] [Fraction(22, 3)] 4367/570
+ACDCBC 19 [1, 1, 3, 1] [Fraction(22, 3)] 4367/570

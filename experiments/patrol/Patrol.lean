@@ -72,7 +72,7 @@ theorem solve_feasible (cost : Route → ℚ) : solve cost ∈ candidates := by
   have seed : ([0,1,2,3] : Route) ∈ candidates :=
     family_coverage _ (by decide) (by decide +kernel)
   rcases (fold_min cost candidates [0,1,2,3]).1 with h | h
-  · exact h.symm ▸ seed
+  · simpa only [solve, h] using seed
   · exact h
 
 abbrev Label := Fin (2 ^ 9)
@@ -177,6 +177,20 @@ theorem thresholdOracle_clean (data : (Route → ℚ)) (incumbent : Label) (stat
   cases flag <;> cases h : threshold data incumbent label <;> simp [withCleanFlag, markPhase, h]
 
 
+def hourlyRate (hourly : Site → ℚ) (x : Site) : ℚ := hourly x / 60
+
+#guard [((4 : ℚ)/5), 1, 5/4, 3/2].zip [63/16, 27/8, 117/40, 21/8] |>.all
+  (fun (speed, expected) =>
+    let cost := score speed (hourlyRate ![3,6,9,9])
+    cost (solve cost) == expected)
+
+#guard [((4 : ℚ)/5), 1, 5/4, 3/2].zip [14169/1180, 507/50, 46281/5350, 4367/570] |>.all
+  (fun (speed, expected) =>
+    let cost := score speed (hourlyRate ![3,6,90,9])
+    cost (solve cost) == expected)
+
+#print axioms coverage
+#print axioms solve_feasible
 #print axioms thresholdOracle_clean
 #print axioms solve_min
 end Patrol
